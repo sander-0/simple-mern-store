@@ -7,7 +7,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target: "https://sander-simple-store-api46891.vercel.app/",
+				target: "https://sander-simple-store-api1927.vercel.app/",
 			},
 		},
 	},
