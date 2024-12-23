@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon backend/server.js",
-    "build": "npm install && cd frontend && npm install && npm install vite --save-dev && npm run build",
+    "build": "npm install && cd frontend && npm install",
     "start": "cross-env NODE_ENV=production node backend/server.js",
     "vercel-build": "npm run build"
   },
