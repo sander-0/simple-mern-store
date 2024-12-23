@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-		"dev": "cross-env NODE_ENV=development nodemon backend/server.js",
-		"postinstall": "cd frontend && npm install && npm run build",
+    "dev": "cross-env NODE_ENV=development nodemon backend/server.js",
+    "postinstall": "cd frontend && npm install && npm run build",
     "build": "npm install && cd frontend && npm install && npm run build",
-		"start": "cross-env NODE_ENV=production node backend/server.js"
+    "start": "cross-env NODE_ENV=production node backend/server.js"
   },
   "type": "module",
   "keywords": [],
@@ -16,7 +16,9 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.2"
+    "glob": "^11.0.0",
+    "mongoose": "^8.9.2",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
