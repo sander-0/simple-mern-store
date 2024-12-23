@@ -24,7 +24,7 @@ export const useProductStore = create((set) => ({
 		set({ products: data.data });
 	},
 	deleteProduct: async (pid) => {
-		const res = await fetch(`https://sander-simple-store-api91823.vercel.app//api/products/${pid}`, {
+		const res = await fetch(`https://sander-simple-store-api91823.vercel.app/api/products/${pid}`, {
 			method: "DELETE",
 		});
 		const data = await res.json();
@@ -35,7 +35,7 @@ export const useProductStore = create((set) => ({
 		return { success: true, message: data.message };
 	},
 	updateProduct: async (pid, updatedProduct) => {
-		const res = await fetch(`https://sander-simple-store-api91823.vercel.app//api/products/${pid}`, {
+		const res = await fetch(`https://sander-simple-store-api91823.vercel.app/api/products/${pid}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
