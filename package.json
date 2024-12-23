@@ -1,11 +1,11 @@
 {
   "name": "first-mern",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "backend/server.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon backend/server.js",
     "build": "npm install",
-    "start": "node server.js"
+    "start": "node backend/server.js"
   },
   "type": "module",
   "keywords": [],
