@@ -14,6 +14,8 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
+db();
+
 const __dirname = path.resolve();
 
 app.use(express.json()); // allows us to accept JSON data in the req.body
@@ -28,6 +30,5 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen(PORT, () => {
-	db();
 	console.log("Server started at http://localhost:" + PORT);
 });
